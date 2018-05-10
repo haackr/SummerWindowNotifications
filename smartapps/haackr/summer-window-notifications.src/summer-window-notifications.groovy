@@ -19,7 +19,7 @@ definition(
     name: "Summer Window Notifications",
     namespace: "haackr",
     author: "Ryan Haack",
-    description: "Notifies you when the temperature outside becomes warmer/cooler than inside so you can close/open your windows.",
+    description: "Notifies you when the temperature outside becomes warmer/cooler than inside so you can close/open your windows. Powered by Weather Underground.",
     category: "Green Living",
     iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
     iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
@@ -85,5 +85,3 @@ def compareTemps() {
     }
     runIn(60*10,compareTemps)
 }
-
-// TODO: implement event handlers
